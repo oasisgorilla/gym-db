@@ -109,7 +109,7 @@ export default function EquipmentPage() {
         )}
 
         <div className="mt-12 pt-8 border-t border-border text-center">
-          <p className="text-xs text-muted-foreground">GymSpec © 2025</p>
+          <p className="text-xs text-muted-foreground">GymDB © 2025</p>
         </div>
       </main>
     </div>
