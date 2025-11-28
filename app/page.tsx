@@ -84,7 +84,7 @@ export default function Home() {
       <header className="border-b border-border bg-card sticky top-0 z-20">
         <div className="mx-auto max-w-md px-4 py-6">
           <h1 className="text-2xl font-bold text-foreground">GymDB</h1>
-          <p className="mt-1 text-sm text-muted-foreground">동네 헬스장 · 장비 스펙 한눈에</p>
+          <p className="mt-1 text-sm text-muted-foreground">로컬 헬스장 맛집 데이터베이스</p>
         </div>
       </header>
 
@@ -169,7 +169,6 @@ export default function Home() {
 
               {/* Footer */}
               <div className="mt-12 pt-8 border-t border-border text-center">
-                <p className="text-sm text-muted-foreground">커뮤니티와 리뷰 기능이 곧 추가됩니다</p>
                 <p className="mt-2 text-xs text-muted-foreground">GymDB © 2025</p>
               </div>
             </div>

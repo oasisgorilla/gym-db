@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "GymDB - 동네 헬스장 장비/시설 스펙 한눈에 보기",
-  description: "수원부터 시작하는 헬스장 장비 스펙 지도. 헬스장 장비와 시설을 한눈에 비교해보세요.",
+  title: "GymDB - 로컬 헬스장 맛집 모음",
+  description: "수원부터 시작하는 헬스장 데이터베이스.",
   generator: "v0.app",
 }
 
