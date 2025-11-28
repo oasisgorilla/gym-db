@@ -1,13 +1,15 @@
 "use client"
 
 import Link from "next/link"
+import { use } from "react"
 import { ChevronLeft } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { EQUIPMENT_CATALOG, GYM_EQUIPMENT, GYMS } from "@/lib/mock-data"
 
-export default function EquipmentDetail({ params }: { params: { id: string } }) {
-  const equipment = EQUIPMENT_CATALOG.find((eq) => eq.id === params.id)
+export default function EquipmentDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params)
+  const equipment = EQUIPMENT_CATALOG.find((eq) => eq.id === id)
 
   if (!equipment) {
     return (
@@ -53,7 +55,7 @@ export default function EquipmentDetail({ params }: { params: { id: string } }) 
       </header>
 
       <main className="mx-auto max-w-md px-4 py-6">
-        <div className="relative h-48 rounded-lg overflow-hidden bg-secondary mb-6">
+        <div className="relative h-96 rounded-lg overflow-hidden bg-secondary mb-6">
           <img
             src={equipment.imageUrl || "/placeholder.svg"}
             alt={equipment.name}
